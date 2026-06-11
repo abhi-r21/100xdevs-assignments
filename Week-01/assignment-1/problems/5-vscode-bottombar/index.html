@@ -7,17 +7,29 @@
             font-family: Arial, sans-serif;
             background-color: black;
         }
+        h2  {
+           font-size: 32px; 
+           margin-top: 30px;
+           margin-bottom: 30px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #9ba3b4;
+        }
+
         .container {
             background-color: black;
-            width: 1200px;
+            max-width: 1200px;
             margin: 0 auto;
             color: white;
         }
 
         .languagePanel {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            padding-inline: 2.5rem
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 10px;
         }
 
         .languagePanel img {
@@ -33,6 +45,8 @@
 
         .flex {
             display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         .verticalCenter {
@@ -48,8 +62,10 @@
     <div class="container">
         <div>
             <h2>Code in any language</h2>
-            <p>VS Code supports almost every major programming language. Several ship in the box, like JavaScript,
-                TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.</p>
+            <p>
+                VS Code supports almost every major programming language. Several ship in the box, like JavaScript,
+                TypeScript, CSS, and HTML, but extensions for others can be found in the VS Code Marketplace.
+            </p>
         </div>
         <div class="languagePanel">
             <div class="flex">
