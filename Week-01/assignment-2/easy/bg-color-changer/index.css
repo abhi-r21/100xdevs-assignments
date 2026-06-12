@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+button {
+    align-items: center;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2.5px solid black;
+    border-radius: 15px;
+
+}
+
+.color-button[data-color="red"] {
+    background-color: red;   
+}
+
+.color-button[data-color="blue"] {
+    background-color: blue;
+}
+
+.color-button[data-color="green"] {
+    background-color: green;
+}
+
+.color-button[data-color="yellow"] {
+    background-color: yellow;
+}
+
+.color-button[data-color="purple"] {
+    background-color: purple;
+}

@@ -37,7 +37,8 @@ a {
 }
 
 .heroContainer > div {
-    text-align:left;
+    max-width: 1200px;
+    text-align:center;
 }
 
 .flex {
@@ -45,13 +46,18 @@ a {
 }
 
 .navContainer {
-    max-width: 1200px;
+    background-color: #0d1014;
+    max-width: 1500px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    border : 0.1px ;
+    padding-top : 8px;
+    padding-bottom : 8px; 
 }
 
 .verticalCenter {
+    background-color: #0d1014;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +65,7 @@ a {
 
 .navLink {
     padding-left: 20px;
-    color: gray;
+    color: white;
 }
 
 .topImage {
@@ -86,7 +92,7 @@ a {
     border: 1px solid rgb(255, 255, 255, 0.2);
     padding: 8px;
     font-size: 16px;
-    background-color: black;
+    background-color: #0d1014;
 }
 
 .downloadButton {
@@ -104,12 +110,12 @@ a {
 
 /* Header Styles */
 header {
-    background-color: black;
+    background-color: #0d1014;
     color: white;
 }
 
 section {
-    background-color: black;
+    background-color: #0d1014;
 }
 
 header h1 {
@@ -138,31 +144,76 @@ nav a:hover {
     color: #007acc;
 }
 
+
+
 /* Hero Section Styles */
 .hero {
     background: linear-gradient(180deg, #0e0e0e 0%, #141414 100%);
     color: white;
-    padding: 50px 20px;
+    padding-bottom: 100px ;
+    padding-top: 80px ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
-.hero h2 {
-    font-size: 3em;
-    margin: 0;
+.heroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 50px;;
 }
 
 .hero p {
     font-size: 1.2em;
 }
+.download-card {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 12px;
+}
 
 .cta-button {
-    display: inline-block;
-    background: #0078d4;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border-radius: 5px;
-    margin-top: 20px;
-    transition: background 0.3s;
+    background-color: #e6edf3;
+    color: black;
+
+    display: block;
+    padding: 18px;
+
+    border-radius: 10px;
+
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.download-links {
+    color: #9ba3b4;
+    font-size: 14px;
+    margin-top: 12px;
+
+}
+
+.download-links:hover {
+    text-decoration: underline;
 }
 
 .cta-button:hover {
@@ -235,7 +286,8 @@ footer {
     }
     
     .verticalCenter > div:has(.navLink) {
-        display: none;
+        display: flex;
+        justify-content: space-between;
     }
     .navContainer {
        max-width: 600px;
