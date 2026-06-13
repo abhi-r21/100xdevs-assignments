@@ -1,5 +1,5 @@
 //  use this quizData in your app.
-export const quizData = [{
+ const quizData = [{
     "question": "Which language runs in a web browser?",
     "a": "Java",
     "b": "C",
@@ -33,3 +33,17 @@ export const quizData = [{
 },
 // you can add more quiz here
 ]
+
+const questionEl = document.getElementById("question");
+
+questionEl.textContent = quizData[0].question;
+
+const optionsEl = document.getElementById("options");
+
+optionsEl.innerHTML = `
+    <p>${quizData[0].a}</p>
+    <p>${quizData[0].b}</p>
+    <p>${quizData[0].c}</p>
+    <p>${quizData[0].d}</p>
+`;
+const answers = document.querySelectorAll('input[name="answer"]');
